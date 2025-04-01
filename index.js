@@ -1,8 +1,8 @@
-const numAleatorio = Match.floor(Match.random() * 10) + 1;
+const numAleatorio = Math.floor(Math.random() * 10) + 1;
 
-const numTentativa = parseInt(prompt("Tente adivinhar um número entre 1 e dez"));
+const numTentativa = parseInt(prompt("Tente adivinhar um número entre 1 e 10"));
 
-if(isNaN(numTentativa) ||numTentativa<1 || numTentativa>10){
+if(isNaN(numTentativa) || numTentativa<1 || numTentativa>10){
     alert("Error: você não digitou um número válido!")
 } else{
 
