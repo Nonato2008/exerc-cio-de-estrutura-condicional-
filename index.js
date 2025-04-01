@@ -1,35 +1,15 @@
-const numUm = parseInt(prompt("Insira um número:"))
+const numAleatorio = Match.floor(Match.random() * 10) + 1;
 
-//isNaN() - ver se o que foi escrito é realmente um número, se NÃO tiver um número ele volta um valor booleano verdadeiro (true)
+const numTentativa = parseInt(prompt("Tente adivinhar um número entre 1 e dez"));
 
-if (isNaN(numUm)) {
-    // verifica se a conversão resultou em um número válido
-    //O espaço das instruções de uma estrura condicional se chama indentação
-    alert("Erro: você não digitou um número!");
+if(isNaN(numTentativa) ||numTentativa<1 || numTentativa>10){
+    alert("Error: você não digitou um número válido!")
+} else{
 
+if (numTentativa == numAleatorio){
+    alert("Parabéns! Você acertou o número secreto!")
+}else{
+    alert(`Que pena! O número correto era ${numAleatorio}`)
 }
 
-if (!isNaN(numUm)) {
-    //só solita o segundo número se o primeiro for válido
-
-    const numDois = parseInt(prompt("Insira outro número:"));
-
-
-    if (isNaN(numDois)) {
-        alert("Erro você não digitou um número válido!");
-    }
-
-    if (!isNaN(numDois) && !isNaN(numUm)) {
-
-        // shift + alt + para organizar a ondentação
-
-        if (numUm === numDois) {
-            alert("Os números são iguais");
-        }
-
-        if (numUm !== numDois) {
-            alert("Os números são diferentes");
-        }
-
-    }
-}
+} 
