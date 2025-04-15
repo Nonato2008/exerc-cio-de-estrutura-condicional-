@@ -1,4 +1,4 @@
-let num = parseInt(prompt("Informe um número: "))
+let num = parseInt(prompt("Informe um número: ")); //declarar váriavel que será usada;
 
 if (isNaN (num)){
     alert("Este número não é válido")
@@ -8,4 +8,4 @@ if (isNaN (num)){
     } else {
         alert ("Este número não é múltiplo de 5!")
     }
-}
+};
