@@ -1,6 +1,6 @@
 let num = parseInt(prompt("Informe um número: ")); //declarar váriavel que será usada;
 
-if (isNaN (num)){
+if (isNaN (num)){ //
     alert("Este número não é válido")
 } else { 
     if (num % 5 == 0){
