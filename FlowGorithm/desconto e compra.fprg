@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="desconto e compra"/>
+        <attribute name="authors" value="DES-I1HSB"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-08 01:42:21 "/>
+        <attribute name="created" value="REVTLUkxSFNCO0VTTjUxMk4xMjYyODM5OzIwMjUtMDQtMDg7IjAxOjI1OjExICI7MjYyMQ=="/>
+        <attribute name="edited" value="REVTLUkxSFNCO0VTTjUxMk4xMjYyODM5OzIwMjUtMDQtMDg7IjAxOjQyOjIxICI7MTsyNzI5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="valorCompra, descontoUm, descontoTotal" type="Real" array="False" size=""/>
+            <output expression="&quot;Informe o valor da sua compra&quot;" newline="True"/>
+            <input variable="valorCompra"/>
+            <if expression="valorCompra &gt;= 100">
+                <then>
+                    <assign variable="descontoUm" expression="(valorCompra * 0.1)"/>
+                    <assign variable="descontoTotal" expression="valorCompra - descontoUm"/>
+                    <output expression="&quot;Voc&#234; ganhou um desconto de 10%&quot;" newline="True"/>
+                    <output expression="&quot;Voc&#234; recebeu um desconto de &quot; &amp; descontoUm &amp; &quot; reais em rela&#231;&#227;o ao valor da sua compra. Sua compra ao todo deu &quot;  &amp; descontoTotal &amp; &quot; reais&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Voc&#234; n&#227;o ganhou o desconto, sua compra ao todo deu &quot; &amp; valorCompra &amp; &quot; reais&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

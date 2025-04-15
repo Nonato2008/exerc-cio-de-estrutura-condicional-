@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Positivo e negativo"/>
+        <attribute name="authors" value="DES-I1HSB"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-08 01:19:39 "/>
+        <attribute name="created" value="REVTLUkxSFNCO0VTTjUxMk4xMjYyODM5OzIwMjUtMDQtMDg7IjEyOjU1OjQ4ICI7MjYzNg=="/>
+        <attribute name="edited" value="REVTLUkxSFNCO0VTTjUxMk4xMjYyODM5OzIwMjUtMDQtMDg7IjAxOjE5OjM5ICI7MjsyNzQz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numUm" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite um n&#250;mero:&quot;" newline="True"/>
+            <input variable="numUm"/>
+            <if expression="numUm &lt; 0">
+                <then>
+                    <output expression="&quot;O n&#250;mero &#233; negativo&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="numUm = 0">
+                        <then>
+                            <output expression="&quot;Seu n&#250;mero &#233; igual a zero&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;O n&#250;mero &#233; positivo&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

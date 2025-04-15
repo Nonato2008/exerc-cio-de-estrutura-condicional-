@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="M&#250;ltiplo de 5"/>
+        <attribute name="authors" value="DES-I1HSB"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-08 01:45:52 "/>
+        <attribute name="created" value="REVTLUkxSFNCO0VTTjUxMk4xMjYyODM5OzIwMjUtMDQtMDg7IjAxOjQyOjUxICI7MjYyNA=="/>
+        <attribute name="edited" value="REVTLUkxSFNCO0VTTjUxMk4xMjYyODM5OzIwMjUtMDQtMDg7IjAxOjQ1OjUyICI7MTsyNzM2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numUm" type="Real" array="False" size=""/>
+            <output expression="&quot;Escreva um n&#250;mero: &quot;" newline="True"/>
+            <input variable="numUm"/>
+            <if expression="(numUM % 5) = 0">
+                <then>
+                    <output expression="&quot;Seu n&#250;mero &#233; m&#250;ltiplo de 5&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Seu n&#250;mero n&#227;o &#233; m&#250;ltiplo de 5&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
