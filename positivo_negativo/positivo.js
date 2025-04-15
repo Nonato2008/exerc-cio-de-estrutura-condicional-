@@ -1,6 +1,6 @@
-let num = parseInt(prompt("Digite um número:"));
+let num = parseInt(prompt("Digite um número:")); //declarar váriavel que será usada;
 
-if (isNaN(num)) {
+if (isNaN(num)) { //código para identificar se o usúario não escreveu letras ao invés de números
     alert("Error este número não é válido! Digite apenas números.")
 } else {
 
